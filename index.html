@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pré-Processador Jurídico v4.1 - Professional Edition</title>
+  <title>Pré-Processador Jurídico v4.1.1 Enhanced - Professional Edition</title>
   <style>
     /* Reset e Base */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -608,7 +608,7 @@
 <body>
   <div class="container">
     <header>
-      <h1>[ PRÉ-PROCESSADOR JURÍDICO v4.1 PROFESSIONAL ]</h1>
+      <h1>[ PRÉ-PROCESSADOR JURÍDICO v4.1.1 ENHANCED ]</h1>
       <h2>Processamento em lote · Organização de autos · Editor Markdown · Análise de peças processuais</h2>
     </header>
 
@@ -964,7 +964,7 @@
     </div>
 
     <footer>
-      Pré-Processador Jurídico v4.1 Professional — Processamento em Lote · Organização de Autos · Editor Markdown · 100% Offline
+      Pré-Processador Jurídico v4.1.1 Enhanced — Detecção Inteligente de Sistema · Limpeza Avançada de Assinaturas · Processamento em Lote · 100% Offline
     </footer>
   </div>
 
@@ -1012,6 +1012,10 @@
   <script src="modules/process-file-organizer.js"></script>
   <script src="modules/batch-processor.js"></script>
 
+  <!-- Carregar Módulos v4.1.1 Enhanced - Sistema inteligente -->
+  <script src="modules/judicial-system-detector.js"></script>
+  <script src="modules/advanced-signature-cleaner.js"></script>
+
   <!-- Script Principal Enhanced -->
   <script src="modules/main-enhanced.js"></script>
 
@@ -1021,7 +1025,7 @@
   <!-- Verificação de Módulos v4.1 -->
   <script>
     (function() {
-      console.log('\n=== VERIFICAÇÃO DE MÓDULOS v4.1 ===');
+      console.log('\n=== VERIFICAÇÃO DE MÓDULOS v4.1.1 ENHANCED ===');
 
       const modules = {
         'PDF.js': typeof pdfjsLib !== 'undefined',
@@ -1035,7 +1039,9 @@
         'OCREngine': typeof OCREngine !== 'undefined',
         'LegalDocumentAnalyzer': typeof LegalDocumentAnalyzer !== 'undefined',
         'ProcessFileOrganizer': typeof ProcessFileOrganizer !== 'undefined',
-        'BatchProcessor': typeof BatchProcessor !== 'undefined'
+        'BatchProcessor': typeof BatchProcessor !== 'undefined',
+        'JudicialSystemDetector': typeof JudicialSystemDetector !== 'undefined',
+        'AdvancedSignatureCleaner': typeof AdvancedSignatureCleaner !== 'undefined'
       };
 
       let allLoaded = true;
